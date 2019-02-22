@@ -5,7 +5,7 @@
    Tutorial 10
    Tutorial Case
    
-   Filename:   lht_events.js   
+   Filename: lht_events.js   
 
    The dayEvent array contains the HTML code of the LHT events in August
 */

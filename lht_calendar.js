@@ -5,10 +5,10 @@
    Tutorial 10
    Tutorial Case
 
-   Author: 
-   Date:  
+   Author: Justin Aybar 
+   Date: 2.22.19
 
-   Filename:   lht_calendar.js  
+   Filename: lht_calendar.js  
 
    Function List:
    createCalendar(calDate)
@@ -38,23 +38,23 @@ document.getElementById("calendar").innerHTML = createCalendar(thisDay);
 
 // Function to generate the calendar table
 function createCalendar(calDate) {
-   var calendarHTML = "<table id='calendar_table'>";
-   calendarHTML += calCaption(calDate);
-   calendarHTML += "</table>";
-   return calendarHTML;
+      var calendarHTML = "<table id='calendar_table'>";
+      calendarHTML += calCaption(calDate);
+      calendarHTML += "</table>";
+      return calendarHTML;
 }
 
 // Function to write the calendar caption
 function calCaption(calDate) {
-   //monthName array contains the list of month names
-   var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      //monthName array contains the list of month names
+      var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-   //determine the current month
-   var thisMonth = calDate.getMonth();
+      //determine the current month
+      var thisMonth = calDate.getMonth();
 
-   //determine the current year
-   var thisYear = calDate.getFullYear();
+      //determine the current year
+      var thisYear = calDate.getFullYear();
 
-   //write the caption
-   return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
+      //write the caption
+      return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
 }
